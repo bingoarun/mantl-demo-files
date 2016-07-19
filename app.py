@@ -22,7 +22,6 @@ def status():
    else:
      result = var + "\n" + "Completed in:" + "0" + "\n"
    return result
-   
 
 @app.route('/add')
 def add():
@@ -52,10 +51,6 @@ def reset():
     global last_run_time
     elements=[]
     return "Resetted"
-        
-    
-    
-   
 
 @app.route('/')
 def hello_world():
