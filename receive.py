@@ -2,7 +2,7 @@ import pika
 import os
 import time
 import requests
-url = os.environ.get('CLOUDAMQP_URL', 'amqp://guest:guest@10.203.63.229/%2f')
+url = os.environ.get('CLOUDAMQP_URL', 'amqp://guest:guest@rabbit-host/%2f')
 params = pika.URLParameters(url)
 params.socket_timeout = 5
 
